@@ -1,21 +1,40 @@
-section
+html 
 {
-    border: 1px solid lightgrey;
-    padding: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 400px;
-    width: 600px;
+    font-family: 'GrundschriftRegular';
+    cursor:url(images/cursor2.png), auto;
 }
 
-h4
+body
 {
+    background-image: url(images/library.jpg);
+    background-repeat: no-repeat;
+    background-size: 1920px, 1080px;
+}
+
+h1
+{
+    text-align: center;
+}
+
+.task_list > .todo > h3
+{
+    color: red;
     font-weight: 400;
+    font-size: 2em;
 }
 .task_list
 {
-    overflow: scroll;
+    overflow: auto;
+    background-image: url(images/notepadbg.jpg);
+    border: 1px solid rgb(151, 151, 151);
+    border-radius: 25px;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 50px;
+    height: 400px;
+    width: 500px;
+    line-height: 2.1em;
 }
 
 .task
@@ -23,30 +42,58 @@ h4
     display: block;
     padding-bottom: 10px;
     font-size: 17px;
-    
+}
+
+.todo
+{
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.done
+{
+    padding: 15px;
 }
 
 .button
 {
-    margin-top: 20px;
-    font-size: 13px;
-    border: 1px solid black;
+    background-image: url(images/save.png);
+    margin-left: 170px;
+    margin-top: 40px;
     padding: 12px;
-    background: lightgray;
 }
 
-.archive
+p
 {
     color: rgb(124, 124, 124);
     text-decoration: line-through;
 }
 
-.addtask > h2
+.addtask
+{
+    background-image: url(images/notepadbg.jpg);
+    border: 1px solid rgb(151, 151, 151);
+    border-radius: 25px;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 500px;
+}
+
+.addtask > div > h2
 {
     font-weight: 400;
+    padding-bottom: 2vh;
 }
 
 .addtask > p
 {
     font-size: 13px;
 }
+
+input
+{
+    cursor:url(images/cursor2.png), auto;
+}
+
